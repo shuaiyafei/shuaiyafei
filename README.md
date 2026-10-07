@@ -1,13 +1,11 @@
-# Hi, I'm Yafei Shuai
+# 个人介绍
 
-I build reliable web experiences and developer tools with TypeScript,
-JavaScript, Vue, React, and Node.js.
+你好，我是 Yafei Shuai，一名专注于 Web 应用和开发者工具的工程师。
 
-I enjoy turning small but real problems into focused fixes backed by regression
-tests. My recent open-source work covers framework type safety, HTTP behavior,
-accessibility, documentation, and AI agent evaluation.
+主要使用 TypeScript、JavaScript、Vue、React 和 Node.js，关注工程质量、
+类型安全、用户体验以及 AI 工具的实际应用。
 
-## Tech
+## 技术栈
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=111)
@@ -16,18 +14,9 @@ accessibility, documentation, and AI agent evaluation.
 ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?logo=nodedotjs&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
 
-## Open-Source Work
+## 关注方向
 
-- [Koa: reject multiple values for singleton response headers](https://github.com/koajs/koa/pull/2012)
-- [Vue Core: support element-specific function refs](https://github.com/vuejs/core/pull/15746)
-- [React: fix exhaustive-deps for JSX component references](https://github.com/react/react/pull/37731)
-- [Vue Devtools: improve app-list keyboard accessibility](https://github.com/vuejs/devtools/pull/1152)
-- [LangGraph.js: add a trust-boundary evaluation example](https://github.com/langchain-ai/langgraphjs/pull/2928)
-- [AIBrix: fix a race in bucket-serve metric capture](https://github.com/vllm-project/aibrix/pull/2857)
-
-## What I Care About
-
-- Small, reviewable changes with clear behavior
-- Regression tests that explain why a fix exists
-- Type-safe APIs and practical developer experience
-- Accessible interfaces and dependable tooling
+- 清晰、可靠且易于维护的工程实现
+- 能够解释问题与修复原因的回归测试
+- 类型安全的 API 与良好的开发体验
+- 易用、无障碍且稳定的产品界面
