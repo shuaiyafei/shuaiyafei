@@ -1,6 +1,6 @@
 # About Me
 
-Hi, I'm Yafei Shuai, a software engineer focused on web applications and
+Hi, I'm a software engineer focused on web applications and
 developer tools.
 
 I work primarily with TypeScript, JavaScript, Vue, React, and Node.js. I care
