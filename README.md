@@ -1,8 +1,8 @@
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-mobile-dark.svg">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-mobile-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-dark.svg">
-  <img src="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-light.svg" width="100%" alt="Software engineer building practical AI agents, developer tools, and thoughtful web experiences.">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-mobile-dark.svg?v=2">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-mobile-light.svg?v=2">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-dark.svg?v=2">
+  <img src="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-light.svg?v=2" width="100%" alt="Software engineer building practical AI agents, developer tools, and thoughtful web experiences.">
 </picture>
 
 <p align="center">
