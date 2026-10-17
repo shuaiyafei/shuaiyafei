@@ -61,11 +61,10 @@ ${body}
 function hero(theme, mobile) {
   const t = themes[theme];
   const w = mobile ? 640 : 1200;
-  const h = mobile ? 550 : 360;
+  const h = mobile ? 430 : 300;
   const x = mobile ? 42 : 56;
-  const nameY = mobile ? 161 : 139;
-  const subtitleY = mobile ? 209 : 185;
-  const roleY = mobile ? 310 : 247;
+  const subtitleY = mobile ? 148 : 130;
+  const roleY = mobile ? 226 : 192;
   const font = mobile ? 26 : 24;
   const roles = [
     "AI agents. Practical by design.",
@@ -88,12 +87,12 @@ function hero(theme, mobile) {
     )
     .join("\n");
   const orbit = mobile
-    ? `<g transform="translate(527 90) scale(.49)">`
-    : `<g transform="translate(994 165)">`;
+    ? `<g transform="translate(533 70) scale(.42)">`
+    : `<g transform="translate(994 138) scale(.90)">`;
   return document(
     w,
     h,
-    "Yafei Shuai — Software Engineer",
+    "Software engineering — shuaiyafei",
     "Building practical AI agents, developer tools, and thoughtful web experiences. A gently animated orbit and rotating typed introductions.",
     `<defs>
   <radialGradient id="haze"><stop stop-color="${t.glow}" stop-opacity=".30"/><stop offset="1" stop-color="${t.glow}" stop-opacity="0"/></radialGradient>
@@ -116,21 +115,20 @@ function hero(theme, mobile) {
 </style>
 <rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="22" fill="${t.bg}" stroke="${t.line}"/>
 <rect x="2" y="2" width="${w - 4}" height="${h - 4}" rx="22" fill="url(#grid)"/>
-<ellipse cx="${mobile ? 535 : 1000}" cy="${mobile ? 110 : 180}" rx="310" ry="260" fill="url(#haze)"/>
+<ellipse cx="${mobile ? 535 : 1000}" cy="${mobile ? 100 : 150}" rx="310" ry="260" fill="url(#haze)"/>
 <path d="M${x} ${mobile ? 67 : 55}h24" stroke="${t.accent}" stroke-width="2"/>
-<text class="mono" x="${x + 38}" y="${mobile ? 72 : 60}" fill="${t.muted}" font-size="${mobile ? 17 : 13}" letter-spacing="2.5">HELLO, I'M</text>
-<text x="${x - 3}" y="${nameY}" font-size="${mobile ? 72 : 78}" font-weight="650" letter-spacing="-3.5" fill="${t.fg}">Yafei Shuai<tspan fill="${t.accent}">.</tspan></text>
-<text x="${x}" y="${subtitleY}" font-size="${mobile ? 23 : 22}" fill="${t.muted}">Software engineer. Curious by default.</text>
+<text class="mono" x="${x + 38}" y="${mobile ? 72 : 60}" fill="${t.muted}" font-size="${mobile ? 17 : 13}" letter-spacing="2.5">SOFTWARE / OPEN SOURCE</text>
+<text x="${x}" y="${subtitleY}" font-size="${mobile ? 28 : 30}" fill="${t.fg}">Software engineer. Curious by default.</text>
 ${roleText}
 <text class="still" x="${x}" y="${roleY}" font-size="${font}" fill="${t.accent}">AI agents. Tools. Thoughtful interfaces.</text>
 ${
   mobile
-    ? `<path d="M${x} 362H598" stroke="${t.line}"/>
-<text x="${x}" y="408" font-size="22" fill="${t.fg}">Making complex things feel simple.</text>
-<text class="mono" x="${x}" y="476" fill="${t.soft}" font-size="16" letter-spacing="1.1">BUILD / SHIP / REFINE</text>
-<text class="mono" x="559" y="480" font-size="23" fill="${t.accent}" font-weight="600">YF</text>`
-    : `<text class="mono" x="${x}" y="313" fill="${t.soft}" font-size="12" letter-spacing="2">BUILD / SHIP / REFINE</text>
-<text x="752" y="313" fill="${t.soft}" font-size="13">Making complex things feel simple.</text>`
+    ? `<path d="M${x} 284H598" stroke="${t.line}"/>
+<text x="${x}" y="330" font-size="22" fill="${t.fg}">Making complex things feel simple.</text>
+<text class="mono" x="${x}" y="381" fill="${t.soft}" font-size="16" letter-spacing="1.1">BUILD / SHIP / REFINE</text>
+<text class="mono" x="559" y="385" font-size="23" fill="${t.accent}" font-weight="600">YF</text>`
+    : `<text class="mono" x="${x}" y="281" fill="${t.soft}" font-size="12" letter-spacing="2">BUILD / SHIP / REFINE</text>
+<text x="752" y="281" fill="${t.soft}" font-size="13">Making complex things feel simple.</text>`
 }
 ${orbit}
   <circle r="108" fill="none" stroke="${t.line}" stroke-width="1"/>

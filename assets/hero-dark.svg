@@ -1,21 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
-<title id="title">Yafei Shuai — Software Engineer</title>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
+<title id="title">Software engineering — shuaiyafei</title>
 <desc id="desc">Building practical AI agents, developer tools, and thoughtful web experiences. A gently animated orbit and rotating typed introductions.</desc>
 <defs>
   <radialGradient id="haze"><stop stop-color="#345d68" stop-opacity=".30"/><stop offset="1" stop-color="#345d68" stop-opacity="0"/></radialGradient>
   <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#2a3a47" stroke-width=".7" opacity=".32"/></pattern>
   <clipPath id="line-0">
-  <rect x="56" y="212" width="0" height="52">
+  <rect x="56" y="157" width="0" height="52">
     <animate attributeName="width" values="0;0;590;590;0;0" keyTimes="0;0.03;0.16;0.27;0.31;1" dur="18s" begin="0s" repeatCount="indefinite"/>
   </rect>
 </clipPath>
 <clipPath id="line-1">
-  <rect x="56" y="212" width="0" height="52">
+  <rect x="56" y="157" width="0" height="52">
     <animate attributeName="width" values="0;0;590;590;0;0" keyTimes="0;0.03;0.16;0.27;0.31;1" dur="18s" begin="6s" repeatCount="indefinite"/>
   </rect>
 </clipPath>
 <clipPath id="line-2">
-  <rect x="56" y="212" width="0" height="52">
+  <rect x="56" y="157" width="0" height="52">
     <animate attributeName="width" values="0;0;590;590;0;0" keyTimes="0;0.03;0.16;0.27;0.31;1" dur="18s" begin="12s" repeatCount="indefinite"/>
   </rect>
 </clipPath>
@@ -34,20 +34,19 @@
     .orbit, .breathe { animation: none; }
   }
 </style>
-<rect x="1" y="1" width="1198" height="358" rx="22" fill="#101820" stroke="#2a3a47"/>
-<rect x="2" y="2" width="1196" height="356" rx="22" fill="url(#grid)"/>
-<ellipse cx="1000" cy="180" rx="310" ry="260" fill="url(#haze)"/>
+<rect x="1" y="1" width="1198" height="298" rx="22" fill="#101820" stroke="#2a3a47"/>
+<rect x="2" y="2" width="1196" height="296" rx="22" fill="url(#grid)"/>
+<ellipse cx="1000" cy="150" rx="310" ry="260" fill="url(#haze)"/>
 <path d="M56 55h24" stroke="#8ccfc9" stroke-width="2"/>
-<text class="mono" x="94" y="60" fill="#a0afb9" font-size="13" letter-spacing="2.5">HELLO, I'M</text>
-<text x="53" y="139" font-size="78" font-weight="650" letter-spacing="-3.5" fill="#edf3f5">Yafei Shuai<tspan fill="#8ccfc9">.</tspan></text>
-<text x="56" y="185" font-size="22" fill="#a0afb9">Software engineer. Curious by default.</text>
-<text class="moving role" x="56" y="247" font-size="24" font-weight="450" fill="#8ccfc9" clip-path="url(#line-0)">AI agents. Practical by design.</text>
-<text class="moving role" x="56" y="247" font-size="24" font-weight="450" fill="#8ccfc9" clip-path="url(#line-1)">Developer tools. Built with care.</text>
-<text class="moving role" x="56" y="247" font-size="24" font-weight="450" fill="#8ccfc9" clip-path="url(#line-2)">Web experiences. Made to feel right.</text>
-<text class="still" x="56" y="247" font-size="24" fill="#8ccfc9">AI agents. Tools. Thoughtful interfaces.</text>
-<text class="mono" x="56" y="313" fill="#617381" font-size="12" letter-spacing="2">BUILD / SHIP / REFINE</text>
-<text x="752" y="313" fill="#617381" font-size="13">Making complex things feel simple.</text>
-<g transform="translate(994 165)">
+<text class="mono" x="94" y="60" fill="#a0afb9" font-size="13" letter-spacing="2.5">SOFTWARE / OPEN SOURCE</text>
+<text x="56" y="130" font-size="30" fill="#edf3f5">Software engineer. Curious by default.</text>
+<text class="moving role" x="56" y="192" font-size="24" font-weight="450" fill="#8ccfc9" clip-path="url(#line-0)">AI agents. Practical by design.</text>
+<text class="moving role" x="56" y="192" font-size="24" font-weight="450" fill="#8ccfc9" clip-path="url(#line-1)">Developer tools. Built with care.</text>
+<text class="moving role" x="56" y="192" font-size="24" font-weight="450" fill="#8ccfc9" clip-path="url(#line-2)">Web experiences. Made to feel right.</text>
+<text class="still" x="56" y="192" font-size="24" fill="#8ccfc9">AI agents. Tools. Thoughtful interfaces.</text>
+<text class="mono" x="56" y="281" fill="#617381" font-size="12" letter-spacing="2">BUILD / SHIP / REFINE</text>
+<text x="752" y="281" fill="#617381" font-size="13">Making complex things feel simple.</text>
+<g transform="translate(994 138) scale(.90)">
   <circle r="108" fill="none" stroke="#2a3a47" stroke-width="1"/>
   <circle r="82" fill="none" stroke="#2a3a47" stroke-dasharray="2 9" opacity=".8"/>
   <path d="M-132 0H132M0-132V132" stroke="#2a3a47" stroke-width=".8" opacity=".7"/>
