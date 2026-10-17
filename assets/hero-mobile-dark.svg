@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="550" viewBox="0 0 640 550" role="img" aria-labelledby="title desc">
+<title id="title">Yafei Shuai — Software Engineer</title>
+<desc id="desc">Building practical AI agents, developer tools, and thoughtful web experiences. A gently animated orbit and rotating typed introductions.</desc>
+<defs>
+  <radialGradient id="haze"><stop stop-color="#345d68" stop-opacity=".30"/><stop offset="1" stop-color="#345d68" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#2a3a47" stroke-width=".7" opacity=".32"/></pattern>
+  <clipPath id="line-0">
+  <rect x="42" y="275" width="0" height="52">
+    <animate attributeName="width" values="0;0;590;590;0;0" keyTimes="0;0.03;0.16;0.27;0.31;1" dur="18s" begin="0s" repeatCount="indefinite"/>
+  </rect>
+</clipPath>
+<clipPath id="line-1">
+  <rect x="42" y="275" width="0" height="52">
+    <animate attributeName="width" values="0;0;590;590;0;0" keyTimes="0;0.03;0.16;0.27;0.31;1" dur="18s" begin="6s" repeatCount="indefinite"/>
+  </rect>
+</clipPath>
+<clipPath id="line-2">
+  <rect x="42" y="275" width="0" height="52">
+    <animate attributeName="width" values="0;0;590;590;0;0" keyTimes="0;0.03;0.16;0.27;0.31;1" dur="18s" begin="12s" repeatCount="indefinite"/>
+  </rect>
+</clipPath>
+</defs>
+<style>
+  text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
+  .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
+  .orbit { transform-origin: 0 0; animation: orbit 32s linear infinite; }
+  .breathe { animation: breathe 6s ease-in-out infinite; }
+  .still { display: none; }
+  @keyframes orbit { to { transform: rotate(360deg); } }
+  @keyframes breathe { 0%,100% { opacity:.38; } 50% { opacity:.95; } }
+  @media (prefers-reduced-motion: reduce) {
+    .moving { display: none; }
+    .still { display: inline; }
+    .orbit, .breathe { animation: none; }
+  }
+</style>
+<rect x="1" y="1" width="638" height="548" rx="22" fill="#101820" stroke="#2a3a47"/>
+<rect x="2" y="2" width="636" height="546" rx="22" fill="url(#grid)"/>
+<ellipse cx="535" cy="110" rx="310" ry="260" fill="url(#haze)"/>
+<path d="M42 67h24" stroke="#8ccfc9" stroke-width="2"/>
+<text class="mono" x="80" y="72" fill="#a0afb9" font-size="17" letter-spacing="2.5">HELLO, I'M</text>
+<text x="39" y="161" font-size="72" font-weight="650" letter-spacing="-3.5" fill="#edf3f5">Yafei Shuai<tspan fill="#8ccfc9">.</tspan></text>
+<text x="42" y="209" font-size="23" fill="#a0afb9">Software engineer. Curious by default.</text>
+<text class="moving role" x="42" y="310" font-size="26" font-weight="450" fill="#8ccfc9" clip-path="url(#line-0)">AI agents. Practical by design.</text>
+<text class="moving role" x="42" y="310" font-size="26" font-weight="450" fill="#8ccfc9" clip-path="url(#line-1)">Developer tools. Built with care.</text>
+<text class="moving role" x="42" y="310" font-size="26" font-weight="450" fill="#8ccfc9" clip-path="url(#line-2)">Web experiences. Made to feel right.</text>
+<text class="still" x="42" y="310" font-size="26" fill="#8ccfc9">AI agents. Tools. Thoughtful interfaces.</text>
+<path d="M42 362H598" stroke="#2a3a47"/>
+<text x="42" y="408" font-size="22" fill="#edf3f5">Making complex things feel simple.</text>
+<text class="mono" x="42" y="476" fill="#617381" font-size="16" letter-spacing="1.1">BUILD / SHIP / REFINE</text>
+<text class="mono" x="559" y="480" font-size="23" fill="#8ccfc9" font-weight="600">YF</text>
+<g transform="translate(527 90) scale(.49)">
+  <circle r="108" fill="none" stroke="#2a3a47" stroke-width="1"/>
+  <circle r="82" fill="none" stroke="#2a3a47" stroke-dasharray="2 9" opacity=".8"/>
+  <path d="M-132 0H132M0-132V132" stroke="#2a3a47" stroke-width=".8" opacity=".7"/>
+  <rect x="-46" y="-46" width="92" height="92" rx="24" fill="#16222b" stroke="#2a3a47" transform="rotate(-12)"/>
+  <text x="0" y="14" font-size="39" font-weight="600" letter-spacing="-2" text-anchor="middle" fill="#edf3f5">YF<tspan fill="#8ccfc9">.</tspan></text>
+  <g class="orbit">
+    <path d="M0-108A108 108 0 0 1 93.5 54" fill="none" stroke="#8ccfc9" stroke-width="1.6" opacity=".42"/>
+    <circle cx="0" cy="-108" r="5" fill="#8ccfc9"/>
+    <circle cx="0" cy="-108" r="12" fill="#8ccfc9" opacity=".09"/>
+  </g>
+  <circle class="breathe" cx="-94" cy="53" r="3" fill="#8ccfc9"/>
+  <circle cx="95" cy="53" r="3" fill="#617381"/>
+</g>
+</svg>

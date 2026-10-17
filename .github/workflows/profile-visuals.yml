@@ -1,0 +1,52 @@
+name: Refresh profile visuals
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 1 * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/profile-visuals.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-visuals
+  cancel-in-progress: false
+
+jobs:
+  render:
+    if: github.repository == 'shuaiyafei/shuaiyafei'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out profile source
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: "24"
+
+      - name: Render public activity cards
+        run: node scripts/render-assets.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Animate the contribution calendar
+        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: shuaiyafei
+          outputs: |
+            .generated/contributions-dark.svg?palette=github-dark&color_snake=%238ccfc9&color_dots=%23131e27,%23203d45,%232d5962,%2351828d,%238ccfc9
+            .generated/contributions-light.svg?color_snake=%23187c83&color_dots=%23edf2f5,%23cee5e7,%239ecbd0,%2362a8b0,%23187c83
+
+      - name: Publish generated assets
+        run: node scripts/publish-assets.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
