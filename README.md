@@ -1,8 +1,8 @@
 <picture>
-  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-mobile-dark.svg?v=2">
-  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-mobile-light.svg?v=2">
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-dark.svg?v=2">
-  <img src="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-light.svg?v=2" width="100%" alt="Software engineer building practical AI agents, developer tools, and thoughtful web experiences.">
+  <source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-mobile-dark.svg?v=3">
+  <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-mobile-light.svg?v=3">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-dark.svg?v=3">
+  <img src="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/main/assets/hero-light.svg?v=3" width="100%" alt="Software engineer building practical AI agents, developer tools, and thoughtful web experiences.">
 </picture>
 
 <p align="center">
@@ -45,13 +45,6 @@ Some communities I've been contributing to:
 - [LangGraph.js](https://github.com/langchain-ai/langgraphjs) — infrastructure for stateful AI agents.
 - [Vue DevTools](https://github.com/vuejs/devtools) — making developer tooling more dependable.
 - [Koa](https://github.com/koajs/koa) — small, focused improvements to a familiar web framework.
-
-## A year in motion
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/profile-assets/generated/contributions-dark.svg">
-  <img src="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/profile-assets/generated/contributions-light.svg" width="100%" alt="An animated snake tracing my GitHub contribution calendar.">
-</picture>
 
 <br>
 

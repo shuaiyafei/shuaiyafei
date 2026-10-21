@@ -44,8 +44,6 @@ const files = [
   "stats-light.svg",
   "stats-mobile-dark.svg",
   "stats-mobile-light.svg",
-  "contributions-dark.svg",
-  "contributions-light.svg",
 ];
 const tree = await Promise.all(
   files.map(async (file) => {

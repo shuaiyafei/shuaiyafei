@@ -24,7 +24,6 @@ const themes = {
     accent: "#8ccfc9",
     line: "#2a3a47",
     glow: "#345d68",
-    tile: "#16222b",
   },
   light: {
     bg: "#f4f7f9",
@@ -34,7 +33,6 @@ const themes = {
     accent: "#187c83",
     line: "#d7e1e6",
     glow: "#a8d5d6",
-    tile: "#eaf0f4",
   },
 };
 const xml = (value) =>
@@ -86,14 +84,11 @@ function hero(theme, mobile) {
         `<text class="moving role" x="${x}" y="${roleY}" font-size="${font}" font-weight="450" fill="${t.accent}" clip-path="url(#line-${i})">${xml(text)}</text>`,
     )
     .join("\n");
-  const orbit = mobile
-    ? `<g transform="translate(533 70) scale(.42)">`
-    : `<g transform="translate(994 138) scale(.90)">`;
   return document(
     w,
     h,
     "Software engineering — shuaiyafei",
-    "Building practical AI agents, developer tools, and thoughtful web experiences. A gently animated orbit and rotating typed introductions.",
+    "Building practical AI agents, developer tools, and thoughtful web experiences. Rotating typed introductions.",
     `<defs>
   <radialGradient id="haze"><stop stop-color="${t.glow}" stop-opacity=".30"/><stop offset="1" stop-color="${t.glow}" stop-opacity="0"/></radialGradient>
   <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="${t.line}" stroke-width=".7" opacity=".32"/></pattern>
@@ -102,15 +97,10 @@ function hero(theme, mobile) {
 <style>
   text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
   .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
-  .orbit { transform-origin: 0 0; animation: orbit 32s linear infinite; }
-  .breathe { animation: breathe 6s ease-in-out infinite; }
   .still { display: none; }
-  @keyframes orbit { to { transform: rotate(360deg); } }
-  @keyframes breathe { 0%,100% { opacity:.38; } 50% { opacity:.95; } }
   @media (prefers-reduced-motion: reduce) {
     .moving { display: none; }
     .still { display: inline; }
-    .orbit, .breathe { animation: none; }
   }
 </style>
 <rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="22" fill="${t.bg}" stroke="${t.line}"/>
@@ -125,25 +115,10 @@ ${
   mobile
     ? `<path d="M${x} 284H598" stroke="${t.line}"/>
 <text x="${x}" y="330" font-size="22" fill="${t.fg}">Making complex things feel simple.</text>
-<text class="mono" x="${x}" y="381" fill="${t.soft}" font-size="16" letter-spacing="1.1">BUILD / SHIP / REFINE</text>
-<text class="mono" x="559" y="385" font-size="23" fill="${t.accent}" font-weight="600">YF</text>`
+<text class="mono" x="${x}" y="381" fill="${t.soft}" font-size="16" letter-spacing="1.1">BUILD / SHIP / REFINE</text>`
     : `<text class="mono" x="${x}" y="281" fill="${t.soft}" font-size="12" letter-spacing="2">BUILD / SHIP / REFINE</text>
 <text x="752" y="281" fill="${t.soft}" font-size="13">Making complex things feel simple.</text>`
-}
-${orbit}
-  <circle r="108" fill="none" stroke="${t.line}" stroke-width="1"/>
-  <circle r="82" fill="none" stroke="${t.line}" stroke-dasharray="2 9" opacity=".8"/>
-  <path d="M-132 0H132M0-132V132" stroke="${t.line}" stroke-width=".8" opacity=".7"/>
-  <rect x="-46" y="-46" width="92" height="92" rx="24" fill="${t.tile}" stroke="${t.line}" transform="rotate(-12)"/>
-  <text x="0" y="14" font-size="39" font-weight="600" letter-spacing="-2" text-anchor="middle" fill="${t.fg}">YF<tspan fill="${t.accent}">.</tspan></text>
-  <g class="orbit">
-    <path d="M0-108A108 108 0 0 1 93.5 54" fill="none" stroke="${t.accent}" stroke-width="1.6" opacity=".42"/>
-    <circle cx="0" cy="-108" r="5" fill="${t.accent}"/>
-    <circle cx="0" cy="-108" r="12" fill="${t.accent}" opacity=".09"/>
-  </g>
-  <circle class="breathe" cx="-94" cy="53" r="3" fill="${t.accent}"/>
-  <circle cx="95" cy="53" r="3" fill="${t.soft}"/>
-</g>`,
+}`,
   );
 }
 

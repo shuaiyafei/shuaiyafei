@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
 <title id="title">Software engineering — shuaiyafei</title>
-<desc id="desc">Building practical AI agents, developer tools, and thoughtful web experiences. A gently animated orbit and rotating typed introductions.</desc>
+<desc id="desc">Building practical AI agents, developer tools, and thoughtful web experiences. Rotating typed introductions.</desc>
 <defs>
   <radialGradient id="haze"><stop stop-color="#a8d5d6" stop-opacity=".30"/><stop offset="1" stop-color="#a8d5d6" stop-opacity="0"/></radialGradient>
   <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#d7e1e6" stroke-width=".7" opacity=".32"/></pattern>
@@ -23,15 +23,10 @@
 <style>
   text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; }
   .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; }
-  .orbit { transform-origin: 0 0; animation: orbit 32s linear infinite; }
-  .breathe { animation: breathe 6s ease-in-out infinite; }
   .still { display: none; }
-  @keyframes orbit { to { transform: rotate(360deg); } }
-  @keyframes breathe { 0%,100% { opacity:.38; } 50% { opacity:.95; } }
   @media (prefers-reduced-motion: reduce) {
     .moving { display: none; }
     .still { display: inline; }
-    .orbit, .breathe { animation: none; }
   }
 </style>
 <rect x="1" y="1" width="1198" height="298" rx="22" fill="#f4f7f9" stroke="#d7e1e6"/>
@@ -46,18 +41,4 @@
 <text class="still" x="56" y="192" font-size="24" fill="#187c83">AI agents. Tools. Thoughtful interfaces.</text>
 <text class="mono" x="56" y="281" fill="#78909d" font-size="12" letter-spacing="2">BUILD / SHIP / REFINE</text>
 <text x="752" y="281" fill="#78909d" font-size="13">Making complex things feel simple.</text>
-<g transform="translate(994 138) scale(.90)">
-  <circle r="108" fill="none" stroke="#d7e1e6" stroke-width="1"/>
-  <circle r="82" fill="none" stroke="#d7e1e6" stroke-dasharray="2 9" opacity=".8"/>
-  <path d="M-132 0H132M0-132V132" stroke="#d7e1e6" stroke-width=".8" opacity=".7"/>
-  <rect x="-46" y="-46" width="92" height="92" rx="24" fill="#eaf0f4" stroke="#d7e1e6" transform="rotate(-12)"/>
-  <text x="0" y="14" font-size="39" font-weight="600" letter-spacing="-2" text-anchor="middle" fill="#172d3a">YF<tspan fill="#187c83">.</tspan></text>
-  <g class="orbit">
-    <path d="M0-108A108 108 0 0 1 93.5 54" fill="none" stroke="#187c83" stroke-width="1.6" opacity=".42"/>
-    <circle cx="0" cy="-108" r="5" fill="#187c83"/>
-    <circle cx="0" cy="-108" r="12" fill="#187c83" opacity=".09"/>
-  </g>
-  <circle class="breathe" cx="-94" cy="53" r="3" fill="#187c83"/>
-  <circle cx="95" cy="53" r="3" fill="#78909d"/>
-</g>
 </svg>

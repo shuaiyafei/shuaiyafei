@@ -38,14 +38,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Animate the contribution calendar
-        uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
-        with:
-          github_user_name: shuaiyafei
-          outputs: |
-            .generated/contributions-dark.svg?palette=github-dark&color_snake=%238ccfc9&color_dots=%23131e27,%23203d45,%232d5962,%2351828d,%238ccfc9
-            .generated/contributions-light.svg?color_snake=%23187c83&color_dots=%23edf2f5,%23cee5e7,%239ecbd0,%2362a8b0,%23187c83
-
       - name: Publish generated assets
         run: node scripts/publish-assets.mjs
         env:
