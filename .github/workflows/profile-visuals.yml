@@ -1,4 +1,4 @@
-name: Refresh profile visuals
+name: Refresh GitHub profile
 
 on:
   workflow_dispatch:
@@ -33,12 +33,12 @@ jobs:
         with:
           node-version: "24"
 
-      - name: Render public activity cards
+      - name: Render public activity cards and merged contributions
         run: node scripts/render-assets.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Publish generated assets
+      - name: Publish cards and update merged contributions
         run: node scripts/publish-assets.mjs
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

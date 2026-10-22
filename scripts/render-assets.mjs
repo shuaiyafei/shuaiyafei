@@ -1,6 +1,11 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  mergedSelection,
+  renderMergedContributions,
+  replaceMergedContributions,
+} from "./merged-contributions.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const login = "shuaiyafei";
@@ -11,7 +16,9 @@ const query = `query {
     repositories(privacy: PUBLIC, ownerAffiliations: [OWNER], first: 1) { totalCount }
   }
   all: search(query: "is:public is:pr author:${login}", type: ISSUE, first: 1) { issueCount }
-  merged: search(query: "is:public is:pr is:merged author:${login}", type: ISSUE, first: 1) { issueCount }
+  merged: search(query: "is:public is:pr is:merged author:${login}", type: ISSUE, first: 100) {
+    ${mergedSelection}
+  }
   open: search(query: "is:public is:pr is:open author:${login}", type: ISSUE, first: 1) { issueCount }
 }`;
 
@@ -163,6 +170,29 @@ ${mobile ? "" : `<text class="mono" x="1152" y="${h - 23}" font-size="11" text-a
   );
 }
 
+async function publicData(query, variables) {
+  const token = process.env.GITHUB_TOKEN;
+  if (!token)
+    throw new Error(
+      "Use --input with complete public API data, or set GITHUB_TOKEN",
+    );
+  const response = await fetch("https://api.github.com/graphql", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ query, variables }),
+    signal: AbortSignal.timeout(30_000),
+  });
+  if (!response.ok)
+    throw new Error(`GitHub public-data request failed (${response.status})`);
+  const payload = await response.json();
+  if (payload.errors?.length || !payload.data)
+    throw new Error("Public GitHub data is unavailable");
+  return payload;
+}
+
 async function main() {
   const queryFile = process.argv.indexOf("--query-file");
   if (queryFile !== -1) {
@@ -174,27 +204,43 @@ async function main() {
   if (input !== -1) {
     payload = JSON.parse(await readFile(process.argv[input + 1], "utf8"));
   } else {
-    const token = process.env.GITHUB_TOKEN;
-    if (!token)
-      throw new Error("Use --input with public API data, or set GITHUB_TOKEN");
-    const response = await fetch("https://api.github.com/graphql", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ query }),
-      signal: AbortSignal.timeout(30_000),
-    });
-    if (!response.ok)
-      throw new Error(`GitHub public-data request failed (${response.status})`);
-    payload = await response.json();
+    payload = await publicData(query);
   }
   if (payload.errors?.length || !payload.data?.profile)
     throw new Error("Public GitHub data is unavailable");
+  let page = payload.data.merged;
+  if (!Array.isArray(page?.nodes) || !page.pageInfo)
+    throw new Error("Public merged pull-request details are unavailable");
+  const merged = [...page.nodes];
+  let pages = 1;
+  while (page.pageInfo.hasNextPage) {
+    if (input !== -1 || pages >= 10 || !page.pageInfo.endCursor)
+      throw new Error("Merged pull-request history is incomplete");
+    const next = await publicData(
+      `query($cursor: String!) {
+        merged: search(query: "is:public is:pr is:merged author:${login}", type: ISSUE, first: 100, after: $cursor) {
+          ${mergedSelection}
+        }
+      }`,
+      { cursor: page.pageInfo.endCursor },
+    );
+    page = next.data.merged;
+    if (!Array.isArray(page?.nodes) || !page.pageInfo)
+      throw new Error("Public merged pull-request details are unavailable");
+    merged.push(...page.nodes);
+    pages += 1;
+  }
+  const contributions = renderMergedContributions(merged, login);
+  const readme = await readFile(resolve(root, "README.md"), "utf8");
+  const preview = replaceMergedContributions(readme, contributions);
   const date = new Date();
   await mkdir(resolve(root, "assets"), { recursive: true });
   await mkdir(resolve(root, ".generated"), { recursive: true });
+  await writeFile(
+    resolve(root, ".generated", "merged-contributions.md"),
+    contributions + "\n",
+  );
+  await writeFile(resolve(root, ".generated", "README.preview.md"), preview);
   for (const theme of ["dark", "light"]) {
     for (const mobile of [false, true]) {
       const suffix = `${mobile ? "mobile-" : ""}${theme}.svg`;
@@ -208,7 +254,9 @@ async function main() {
       );
     }
   }
-  console.log("Rendered four hero variants and four public-activity cards.");
+  console.log(
+    "Rendered four hero variants, four activity cards, and recent merged contributions.",
+  );
 }
 
 await main();

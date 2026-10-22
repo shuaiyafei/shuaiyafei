@@ -40,11 +40,13 @@ I contribute by tracing bugs, tightening types, and making everyday tools a litt
   <img src="https://raw.githubusercontent.com/shuaiyafei/shuaiyafei/profile-assets/generated/stats-light.svg" width="100%" alt="Public GitHub pull requests, merged pull requests, open pull requests, and public repositories. Refreshed daily.">
 </picture>
 
+<!-- MERGED-PRS:START -->
 Some communities I've been contributing to:
 
 - [LangGraph.js](https://github.com/langchain-ai/langgraphjs) — infrastructure for stateful AI agents.
 - [Vue DevTools](https://github.com/vuejs/devtools) — making developer tooling more dependable.
 - [Koa](https://github.com/koajs/koa) — small, focused improvements to a familiar web framework.
+<!-- MERGED-PRS:END -->
 
 <br>
 

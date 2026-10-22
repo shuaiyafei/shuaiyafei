@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { replaceMergedContributions } from "./merged-contributions.mjs";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const repository = process.env.GITHUB_REPOSITORY;
@@ -77,4 +78,60 @@ if (ref && nextTree.sha === parent.tree.sha) {
     });
   }
   console.log("Published generated visuals to profile-assets.");
+}
+
+const contributions = await readFile(
+  resolve(root, ".generated", "merged-contributions.md"),
+  "utf8",
+);
+const mainRef = await api("/git/ref/heads/main");
+const readme = await api(`/contents/README.md?ref=${mainRef.object.sha}`);
+if (readme.type !== "file" || readme.encoding !== "base64") {
+  throw new Error("Profile README is unavailable");
+}
+const currentReadme = Buffer.from(readme.content, "base64").toString("utf8");
+const updatedReadme = replaceMergedContributions(currentReadme, contributions);
+if (updatedReadme === currentReadme) {
+  console.log("Merged contributions are unchanged; no README commit needed.");
+} else {
+  const response = await fetch("https://api.github.com/graphql", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query: `mutation($input: CreateCommitOnBranchInput!) {
+        createCommitOnBranch(input: $input) { commit { oid } }
+      }`,
+      variables: {
+        input: {
+          branch: { repositoryNameWithOwner: repository, branchName: "main" },
+          expectedHeadOid: mainRef.object.sha,
+          message: { headline: "chore(profile): refresh merged contributions" },
+          fileChanges: {
+            additions: [
+              {
+                path: "README.md",
+                contents: Buffer.from(updatedReadme, "utf8").toString("base64"),
+              },
+            ],
+          },
+        },
+      },
+    }),
+    signal: AbortSignal.timeout(30_000),
+  });
+  if (!response.ok)
+    throw new Error(`README publication failed (${response.status})`);
+  const result = await response.json();
+  if (result.errors?.length || !result.data?.createCommitOnBranch?.commit?.oid) {
+    throw new Error(
+      `README publication failed: ${
+        result.errors?.map((error) => error.message).join("; ") ||
+        "GitHub returned no commit"
+      }`,
+    );
+  }
+  console.log("Updated merged contributions in the profile README.");
 }
