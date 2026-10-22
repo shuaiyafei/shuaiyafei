@@ -41,11 +41,18 @@ I contribute by tracing bugs, tightening types, and making everyday tools a litt
 </picture>
 
 <!-- MERGED-PRS:START -->
-Some communities I've been contributing to:
+### Recently merged
 
-- [LangGraph.js](https://github.com/langchain-ai/langgraphjs) — infrastructure for stateful AI agents.
-- [Vue DevTools](https://github.com/vuejs/devtools) — making developer tooling more dependable.
-- [Koa](https://github.com/koajs/koa) — small, focused improvements to a familiar web framework.
+| Project | Contribution | Merged |
+| :-- | :-- | :-- |
+| [rollup/rollup](https://github.com/rollup/rollup) | [#6593 · Close bundles in the Gulp examples](https://github.com/rollup/rollup/pull/6593) | 2026-10-22 |
+| [rollup/rollup](https://github.com/rollup/rollup) | [#6592 · Preserve native module load errors](https://github.com/rollup/rollup/pull/6592) | 2026-10-22 |
+| [pnpm/pnpm](https://github.com/pnpm/pnpm) | [#17146 · fix(pack): expand numeric brace ranges](https://github.com/pnpm/pnpm/pull/17146) | 2026-10-20 |
+| [rollup/rollup](https://github.com/rollup/rollup) | [#6588 · Match stateful external regular expressions consistently](https://github.com/rollup/rollup/pull/6588) | 2026-10-19 |
+| [rollup/rollup](https://github.com/rollup/rollup) | [#6587 · Fix transform diagnostics at position zero](https://github.com/rollup/rollup/pull/6587) | 2026-10-19 |
+| [vuejs/devtools](https://github.com/vuejs/devtools) | [#1168 · fix(codec): preserve sparse array slots in state previews](https://github.com/vuejs/devtools/pull/1168) | 2026-10-19 |
+
+<sub>Public upstream contributions · Dates in UTC+8 · Updated daily · <a href="https://github.com/pulls?q=is%3Apublic%20is%3Apr%20is%3Amerged%20author%3Ashuaiyafei%20-user%3Ashuaiyafei">View all merged PRs ↗</a></sub>
 <!-- MERGED-PRS:END -->
 
 <br>
