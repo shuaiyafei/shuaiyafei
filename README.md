@@ -45,12 +45,12 @@ I contribute by tracing bugs, tightening types, and making everyday tools a litt
 
 | Project | Contribution | Merged |
 | :-- | :-- | :-- |
+| [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | [#13405 · fix: honor runtime streaming callback precedence](https://github.com/deepset-ai/haystack/pull/13405) | 2026-11-05 |
+| [huggingface/huggingface\_hub](https://github.com/huggingface/huggingface_hub) | [#5299 · \[Docs\] Include provider options in endpoint deploy example](https://github.com/huggingface/huggingface_hub/pull/5299) | 2026-11-04 |
+| [pydantic/logfire](https://github.com/pydantic/logfire) | [#2713 · fix(datasets): serialize dictionary-valued case fields](https://github.com/pydantic/logfire/pull/2713) | 2026-11-04 |
+| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3579 · fix(tools): preserve optional Tavily search result fields](https://github.com/ag2ai/ag2/pull/3579) | 2026-11-04 |
 | [huggingface/huggingface\_hub](https://github.com/huggingface/huggingface_hub) | [#5288 · \[Docs\] Fix the CLI extension build backend](https://github.com/huggingface/huggingface_hub/pull/5288) | 2026-11-02 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [#5083 · docs: correct Nemotron OCR installation instructions](https://github.com/docling-project/docling/pull/5083) | 2026-10-29 |
-| [rollup/rollup](https://github.com/rollup/rollup) | [#6602 · Preserve rendering errors when renderError fails](https://github.com/rollup/rollup/pull/6602) | 2026-10-28 |
-| [jdx/mise](https://github.com/jdx/mise) | [#14801 · fix(env): avoid sops CLI recursion through mise shims](https://github.com/jdx/mise/pull/14801) | 2026-10-26 |
-| [rollup/rollup](https://github.com/rollup/rollup) | [#6593 · Close bundles in the Gulp examples](https://github.com/rollup/rollup/pull/6593) | 2026-10-22 |
-| [rollup/rollup](https://github.com/rollup/rollup) | [#6592 · Preserve native module load errors](https://github.com/rollup/rollup/pull/6592) | 2026-10-22 |
 
 <sub>Public upstream contributions · Dates in UTC+8 · Updated daily · <a href="https://github.com/pulls?q=is%3Apublic%20is%3Apr%20is%3Amerged%20author%3Ashuaiyafei%20-user%3Ashuaiyafei">View all merged PRs ↗</a></sub>
 <!-- MERGED-PRS:END -->
