@@ -45,12 +45,12 @@ I contribute by tracing bugs, tightening types, and making everyday tools a litt
 
 | Project | Contribution | Merged |
 | :-- | :-- | :-- |
+| [langchain-ai/docs](https://github.com/langchain-ai/docs) | [#7512 · docs: fix Python persistent-memory examples](https://github.com/langchain-ai/docs/pull/7512) | 2026-11-09 |
+| [langchain-ai/docs](https://github.com/langchain-ai/docs) | [#7511 · docs: fix Python subagent middleware setup](https://github.com/langchain-ai/docs/pull/7511) | 2026-11-09 |
+| [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | [#13611 · docs: fix Solr example embedder imports](https://github.com/deepset-ai/haystack/pull/13611) | 2026-11-09 |
 | [docling-project/docling](https://github.com/docling-project/docling) | [#5102 · docs: fix VLM configuration in GPU guide](https://github.com/docling-project/docling/pull/5102) | 2026-11-07 |
 | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | [#12048 · fix(providers): preserve empty AI21 completions](https://github.com/promptfoo/promptfoo/pull/12048) | 2026-11-06 |
 | [huggingface/huggingface\_hub](https://github.com/huggingface/huggingface_hub) | [#5307 · \[Docs\] Use text classification in the FinBERT endpoint example](https://github.com/huggingface/huggingface_hub/pull/5307) | 2026-11-05 |
-| [pydantic/logfire](https://github.com/pydantic/logfire) | [#2725 · docs: match dataset dictionary example to its schema](https://github.com/pydantic/logfire/pull/2725) | 2026-11-05 |
-| [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | [#13405 · fix: honor runtime streaming callback precedence](https://github.com/deepset-ai/haystack/pull/13405) | 2026-11-05 |
-| [huggingface/huggingface\_hub](https://github.com/huggingface/huggingface_hub) | [#5299 · \[Docs\] Include provider options in endpoint deploy example](https://github.com/huggingface/huggingface_hub/pull/5299) | 2026-11-04 |
 
 <sub>Public upstream contributions · Dates in UTC+8 · Updated daily · <a href="https://github.com/pulls?q=is%3Apublic%20is%3Apr%20is%3Amerged%20author%3Ashuaiyafei%20-user%3Ashuaiyafei">View all merged PRs ↗</a></sub>
 <!-- MERGED-PRS:END -->
