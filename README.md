@@ -45,12 +45,12 @@ I contribute by tracing bugs, tightening types, and making everyday tools a litt
 
 | Project | Contribution | Merged |
 | :-- | :-- | :-- |
+| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | [#6010 · test(inspector): decode file URLs in HTTP contract fixtures](https://github.com/heygen-com/hyperframes/pull/6010) | 2026-11-11 |
+| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | [#6011 · fix(studio): respect composition and cancellation in text inputs](https://github.com/heygen-com/hyperframes/pull/6011) | 2026-11-11 |
+| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3633 · docs: align custom expectation evaluator with the Hub protocol](https://github.com/ag2ai/ag2/pull/3633) | 2026-11-11 |
+| [jamjet-labs/jamjet](https://github.com/jamjet-labs/jamjet) | [#196 · fix(eval): fail required trajectory checks when events are unavailable](https://github.com/jamjet-labs/jamjet/pull/196) | 2026-11-10 |
 | [langchain-ai/docs](https://github.com/langchain-ai/docs) | [#7512 · docs: fix Python persistent-memory examples](https://github.com/langchain-ai/docs/pull/7512) | 2026-11-09 |
 | [langchain-ai/docs](https://github.com/langchain-ai/docs) | [#7511 · docs: fix Python subagent middleware setup](https://github.com/langchain-ai/docs/pull/7511) | 2026-11-09 |
-| [deepset-ai/haystack](https://github.com/deepset-ai/haystack) | [#13611 · docs: fix Solr example embedder imports](https://github.com/deepset-ai/haystack/pull/13611) | 2026-11-09 |
-| [docling-project/docling](https://github.com/docling-project/docling) | [#5102 · docs: fix VLM configuration in GPU guide](https://github.com/docling-project/docling/pull/5102) | 2026-11-07 |
-| [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | [#12048 · fix(providers): preserve empty AI21 completions](https://github.com/promptfoo/promptfoo/pull/12048) | 2026-11-06 |
-| [huggingface/huggingface\_hub](https://github.com/huggingface/huggingface_hub) | [#5307 · \[Docs\] Use text classification in the FinBERT endpoint example](https://github.com/huggingface/huggingface_hub/pull/5307) | 2026-11-05 |
 
 <sub>Public upstream contributions · Dates in UTC+8 · Updated daily · <a href="https://github.com/pulls?q=is%3Apublic%20is%3Apr%20is%3Amerged%20author%3Ashuaiyafei%20-user%3Ashuaiyafei">View all merged PRs ↗</a></sub>
 <!-- MERGED-PRS:END -->
