@@ -45,12 +45,12 @@ I contribute by tracing bugs, tightening types, and making everyday tools a litt
 
 | Project | Contribution | Merged |
 | :-- | :-- | :-- |
-| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | [#6010 · test(inspector): decode file URLs in HTTP contract fixtures](https://github.com/heygen-com/hyperframes/pull/6010) | 2026-11-11 |
-| [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) | [#6011 · fix(studio): respect composition and cancellation in text inputs](https://github.com/heygen-com/hyperframes/pull/6011) | 2026-11-11 |
-| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3633 · docs: align custom expectation evaluator with the Hub protocol](https://github.com/ag2ai/ag2/pull/3633) | 2026-11-11 |
-| [jamjet-labs/jamjet](https://github.com/jamjet-labs/jamjet) | [#196 · fix(eval): fail required trajectory checks when events are unavailable](https://github.com/jamjet-labs/jamjet/pull/196) | 2026-11-10 |
-| [langchain-ai/docs](https://github.com/langchain-ai/docs) | [#7512 · docs: fix Python persistent-memory examples](https://github.com/langchain-ai/docs/pull/7512) | 2026-11-09 |
-| [langchain-ai/docs](https://github.com/langchain-ai/docs) | [#7511 · docs: fix Python subagent middleware setup](https://github.com/langchain-ai/docs/pull/7511) | 2026-11-09 |
+| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3646 · docs: align network recovery examples with current APIs](https://github.com/ag2ai/ag2/pull/3646) | 2026-11-12 |
+| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3645 · docs: fix direct network view projection example](https://github.com/ag2ai/ag2/pull/3645) | 2026-11-12 |
+| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3640 · docs: fix manual human invite acknowledgement](https://github.com/ag2ai/ag2/pull/3640) | 2026-11-12 |
+| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3602 · docs: align network Rule example with nested policy fields](https://github.com/ag2ai/ag2/pull/3602) | 2026-11-12 |
+| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3601 · docs: fix vendor metadata examples for input factories](https://github.com/ag2ai/ag2/pull/3601) | 2026-11-12 |
+| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3586 · docs: clarify Perplexity answer compatibility and results](https://github.com/ag2ai/ag2/pull/3586) | 2026-11-12 |
 
 <sub>Public upstream contributions · Dates in UTC+8 · Updated daily · <a href="https://github.com/pulls?q=is%3Apublic%20is%3Apr%20is%3Amerged%20author%3Ashuaiyafei%20-user%3Ashuaiyafei">View all merged PRs ↗</a></sub>
 <!-- MERGED-PRS:END -->
