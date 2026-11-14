@@ -45,12 +45,12 @@ I contribute by tracing bugs, tightening types, and making everyday tools a litt
 
 | Project | Contribution | Merged |
 | :-- | :-- | :-- |
-| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3646 · docs: align network recovery examples with current APIs](https://github.com/ag2ai/ag2/pull/3646) | 2026-11-12 |
-| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3645 · docs: fix direct network view projection example](https://github.com/ag2ai/ag2/pull/3645) | 2026-11-12 |
-| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3640 · docs: fix manual human invite acknowledgement](https://github.com/ag2ai/ag2/pull/3640) | 2026-11-12 |
-| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3602 · docs: align network Rule example with nested policy fields](https://github.com/ag2ai/ag2/pull/3602) | 2026-11-12 |
-| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3601 · docs: fix vendor metadata examples for input factories](https://github.com/ag2ai/ag2/pull/3601) | 2026-11-12 |
-| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3586 · docs: clarify Perplexity answer compatibility and results](https://github.com/ag2ai/ag2/pull/3586) | 2026-11-12 |
+| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3665 · fix(a2a): supply the basic server example card URL](https://github.com/ag2ai/ag2/pull/3665) | 2026-11-14 |
+| [jamjet-labs/jamjet](https://github.com/jamjet-labs/jamjet) | [#198 · fix(eval): preserve trajectory assertions in experiment grids](https://github.com/jamjet-labs/jamjet/pull/198) | 2026-11-14 |
+| [jamjet-labs/jamjet](https://github.com/jamjet-labs/jamjet) | [#201 · fix(runtime): allow scoped runs with memory disabled](https://github.com/jamjet-labs/jamjet/pull/201) | 2026-11-14 |
+| [jamjet-labs/jamjet](https://github.com/jamjet-labs/jamjet) | [#200 · fix(eval): reject invalid LLM judge ratings](https://github.com/jamjet-labs/jamjet/pull/200) | 2026-11-14 |
+| [567-labs/instructor](https://github.com/567-labs/instructor) | [#3036 · docs(batch): align guides with supported providers](https://github.com/567-labs/instructor/pull/3036) | 2026-11-14 |
+| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3650 · docs: align Hub authentication and identity examples](https://github.com/ag2ai/ag2/pull/3650) | 2026-11-14 |
 
 <sub>Public upstream contributions · Dates in UTC+8 · Updated daily · <a href="https://github.com/pulls?q=is%3Apublic%20is%3Apr%20is%3Amerged%20author%3Ashuaiyafei%20-user%3Ashuaiyafei">View all merged PRs ↗</a></sub>
 <!-- MERGED-PRS:END -->
