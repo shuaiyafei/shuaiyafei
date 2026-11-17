@@ -45,12 +45,12 @@ I contribute by tracing bugs, tightening types, and making everyday tools a litt
 
 | Project | Contribution | Merged |
 | :-- | :-- | :-- |
+| [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | [#4259 · fix(parser): preserve OMML function names across runs and scripts](https://github.com/HKUDS/LightRAG/pull/4259) | 2026-11-16 |
 | [jamjet-labs/jamjet](https://github.com/jamjet-labs/jamjet) | [#203 · fix(tools): emit schema objects for tool parameters](https://github.com/jamjet-labs/jamjet/pull/203) | 2026-11-16 |
 | [jamjet-labs/jamjet](https://github.com/jamjet-labs/jamjet) | [#202 · fix(runtime): carry results between plan execution steps](https://github.com/jamjet-labs/jamjet/pull/202) | 2026-11-16 |
 | [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3665 · fix(a2a): supply the basic server example card URL](https://github.com/ag2ai/ag2/pull/3665) | 2026-11-14 |
 | [jamjet-labs/jamjet](https://github.com/jamjet-labs/jamjet) | [#198 · fix(eval): preserve trajectory assertions in experiment grids](https://github.com/jamjet-labs/jamjet/pull/198) | 2026-11-14 |
 | [jamjet-labs/jamjet](https://github.com/jamjet-labs/jamjet) | [#201 · fix(runtime): allow scoped runs with memory disabled](https://github.com/jamjet-labs/jamjet/pull/201) | 2026-11-14 |
-| [jamjet-labs/jamjet](https://github.com/jamjet-labs/jamjet) | [#200 · fix(eval): reject invalid LLM judge ratings](https://github.com/jamjet-labs/jamjet/pull/200) | 2026-11-14 |
 
 <sub>Public upstream contributions · Dates in UTC+8 · Updated daily · <a href="https://github.com/pulls?q=is%3Apublic%20is%3Apr%20is%3Amerged%20author%3Ashuaiyafei%20-user%3Ashuaiyafei">View all merged PRs ↗</a></sub>
 <!-- MERGED-PRS:END -->
