@@ -45,12 +45,12 @@ I contribute by tracing bugs, tightening types, and making everyday tools a litt
 
 | Project | Contribution | Merged |
 | :-- | :-- | :-- |
+| [micro/go-micro](https://github.com/micro/go-micro) | [#5066 · fix(model): propagate in-stream provider errors](https://github.com/micro/go-micro/pull/5066) | 2026-11-19 |
+| [netboxlabs/netbox-mcp-server](https://github.com/netboxlabs/netbox-mcp-server) | [#197 · docs: fix pagination in the two-step query example](https://github.com/netboxlabs/netbox-mcp-server/pull/197) | 2026-11-19 |
+| [netboxlabs/netbox-mcp-server](https://github.com/netboxlabs/netbox-mcp-server) | [#196 · fix(client): send bulk requests to NetBox list endpoints](https://github.com/netboxlabs/netbox-mcp-server/pull/196) | 2026-11-19 |
+| [netboxlabs/netbox-mcp-server](https://github.com/netboxlabs/netbox-mcp-server) | [#195 · fix: honor capped page sizes during plugin discovery](https://github.com/netboxlabs/netbox-mcp-server/pull/195) | 2026-11-19 |
 | [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | [#4260 · fix(parser): count HTML table rows with omitted end tags](https://github.com/HKUDS/LightRAG/pull/4260) | 2026-11-18 |
 | [HKUDS/LightRAG](https://github.com/HKUDS/LightRAG) | [#4259 · fix(parser): preserve OMML function names across runs and scripts](https://github.com/HKUDS/LightRAG/pull/4259) | 2026-11-16 |
-| [jamjet-labs/jamjet](https://github.com/jamjet-labs/jamjet) | [#203 · fix(tools): emit schema objects for tool parameters](https://github.com/jamjet-labs/jamjet/pull/203) | 2026-11-16 |
-| [jamjet-labs/jamjet](https://github.com/jamjet-labs/jamjet) | [#202 · fix(runtime): carry results between plan execution steps](https://github.com/jamjet-labs/jamjet/pull/202) | 2026-11-16 |
-| [ag2ai/ag2](https://github.com/ag2ai/ag2) | [#3665 · fix(a2a): supply the basic server example card URL](https://github.com/ag2ai/ag2/pull/3665) | 2026-11-14 |
-| [jamjet-labs/jamjet](https://github.com/jamjet-labs/jamjet) | [#198 · fix(eval): preserve trajectory assertions in experiment grids](https://github.com/jamjet-labs/jamjet/pull/198) | 2026-11-14 |
 
 <sub>Public upstream contributions · Dates in UTC+8 · Updated daily · <a href="https://github.com/pulls?q=is%3Apublic%20is%3Apr%20is%3Amerged%20author%3Ashuaiyafei%20-user%3Ashuaiyafei">View all merged PRs ↗</a></sub>
 <!-- MERGED-PRS:END -->
