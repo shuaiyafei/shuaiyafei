@@ -45,12 +45,12 @@ I contribute by tracing bugs, tightening types, and making everyday tools a litt
 
 | Project | Contribution | Merged |
 | :-- | :-- | :-- |
-| [micro/go-micro](https://github.com/micro/go-micro) | [#5076 · fix(kubernetes): reject unsuccessful watch responses](https://github.com/micro/go-micro/pull/5076) | 2026-11-25 |
-| [micro/go-micro](https://github.com/micro/go-micro) | [#5075 · fix(kubernetes): announce pods added to registry watches](https://github.com/micro/go-micro/pull/5075) | 2026-11-24 |
-| [micro/go-micro](https://github.com/micro/go-micro) | [#5072 · fix(gemini): encode tool results as response objects](https://github.com/micro/go-micro/pull/5072) | 2026-11-23 |
-| [micro/go-micro](https://github.com/micro/go-micro) | [#5071 · fix(gemini): honor output caps during generation](https://github.com/micro/go-micro/pull/5071) | 2026-11-21 |
-| [getmaxun/maxun](https://github.com/getmaxun/maxun) | [#1290 · fix(output): summarize pages before filtering requested formats](https://github.com/getmaxun/maxun/pull/1290) | 2026-11-20 |
-| [micro/go-micro](https://github.com/micro/go-micro) | [#5069 · fix(ollama): avoid duplicating the cloud API version](https://github.com/micro/go-micro/pull/5069) | 2026-11-20 |
+| [getmaxun/maxun](https://github.com/getmaxun/maxun) | [#1301 · fix(ai-extract): preserve code fences in JSON values](https://github.com/getmaxun/maxun/pull/1301) | 2026-11-26 |
+| [getmaxun/maxun](https://github.com/getmaxun/maxun) | [#1300 · fix(summary): authenticate configured Ollama requests](https://github.com/getmaxun/maxun/pull/1300) | 2026-11-26 |
+| [getmaxun/maxun](https://github.com/getmaxun/maxun) | [#1299 · fix(llm): preserve trailing slashes in explicit API keys](https://github.com/getmaxun/maxun/pull/1299) | 2026-11-26 |
+| [getmaxun/maxun](https://github.com/getmaxun/maxun) | [#1296 · fix(markdown): preserve MathML comparisons in LaTeX output](https://github.com/getmaxun/maxun/pull/1296) | 2026-11-26 |
+| [getmaxun/maxun](https://github.com/getmaxun/maxun) | [#1291 · fix(markdown): preserve encoded redirect destination queries](https://github.com/getmaxun/maxun/pull/1291) | 2026-11-26 |
+| [cloudflare/vinext](https://github.com/cloudflare/vinext) | [#4882 · fix(image): constrain legacy intrinsic images to their container](https://github.com/cloudflare/vinext/pull/4882) | 2026-11-25 |
 
 <sub>Public upstream contributions · Dates in UTC+8 · Updated daily · <a href="https://github.com/pulls?q=is%3Apublic%20is%3Apr%20is%3Amerged%20author%3Ashuaiyafei%20-user%3Ashuaiyafei">View all merged PRs ↗</a></sub>
 <!-- MERGED-PRS:END -->
